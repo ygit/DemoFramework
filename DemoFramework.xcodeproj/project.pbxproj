@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F910D976247AF38600BD8CA6 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F910D975247AF38600BD8CA6 /* Quick.framework */; };
+		F910D978247AF38C00BD8CA6 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F910D977247AF38C00BD8CA6 /* Nimble.framework */; };
 		F9448DE6247AF164007C1590 /* DemoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9448DDC247AF164007C1590 /* DemoFramework.framework */; };
-		F9448DEB247AF164007C1590 /* DemoFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9448DEA247AF164007C1590 /* DemoFrameworkTests.m */; };
 		F9448DED247AF164007C1590 /* DemoFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = F9448DDF247AF164007C1590 /* DemoFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F97B257C247AF41E00E3C5D1 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97B257B247AF41E00E3C5D1 /* OCMock.framework */; };
+		F97B257F247AF47B00E3C5D1 /* PublicInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = F97B257D247AF47B00E3C5D1 /* PublicInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F97B2580247AF47B00E3C5D1 /* PublicInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = F97B257E247AF47B00E3C5D1 /* PublicInterface.m */; };
+		F97B2583247AF4BE00E3C5D1 /* PrivateInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = F97B2581247AF4BE00E3C5D1 /* PrivateInterface.h */; };
+		F97B2584247AF4BE00E3C5D1 /* PrivateInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = F97B2582247AF4BE00E3C5D1 /* PrivateInterface.m */; };
+		F97B2586247AF54F00E3C5D1 /* PublicInterfaceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F97B2585247AF54F00E3C5D1 /* PublicInterfaceSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +30,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F910D975247AF38600BD8CA6 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F910D977247AF38C00BD8CA6 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9448DDC247AF164007C1590 /* DemoFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DemoFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9448DDF247AF164007C1590 /* DemoFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoFramework.h; sourceTree = "<group>"; };
 		F9448DE0247AF164007C1590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9448DE5247AF164007C1590 /* DemoFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9448DEA247AF164007C1590 /* DemoFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoFrameworkTests.m; sourceTree = "<group>"; };
 		F9448DEC247AF164007C1590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F97B257B247AF41E00E3C5D1 /* OCMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OCMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F97B257D247AF47B00E3C5D1 /* PublicInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicInterface.h; sourceTree = "<group>"; };
+		F97B257E247AF47B00E3C5D1 /* PublicInterface.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicInterface.m; sourceTree = "<group>"; };
+		F97B2581247AF4BE00E3C5D1 /* PrivateInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateInterface.h; sourceTree = "<group>"; };
+		F97B2582247AF4BE00E3C5D1 /* PrivateInterface.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateInterface.m; sourceTree = "<group>"; };
+		F97B2585247AF54F00E3C5D1 /* PublicInterfaceSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicInterfaceSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F97B257C247AF41E00E3C5D1 /* OCMock.framework in Frameworks */,
+				F910D978247AF38C00BD8CA6 /* Nimble.framework in Frameworks */,
+				F910D976247AF38600BD8CA6 /* Quick.framework in Frameworks */,
 				F9448DE6247AF164007C1590 /* DemoFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,12 +67,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F910D974247AF38600BD8CA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F97B257B247AF41E00E3C5D1 /* OCMock.framework */,
+				F910D977247AF38C00BD8CA6 /* Nimble.framework */,
+				F910D975247AF38600BD8CA6 /* Quick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F9448DD2247AF163007C1590 = {
 			isa = PBXGroup;
 			children = (
 				F9448DDE247AF164007C1590 /* DemoFramework */,
 				F9448DE9247AF164007C1590 /* DemoFrameworkTests */,
 				F9448DDD247AF164007C1590 /* Products */,
+				F910D974247AF38600BD8CA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +100,10 @@
 			isa = PBXGroup;
 			children = (
 				F9448DDF247AF164007C1590 /* DemoFramework.h */,
+				F97B257D247AF47B00E3C5D1 /* PublicInterface.h */,
+				F97B257E247AF47B00E3C5D1 /* PublicInterface.m */,
+				F97B2581247AF4BE00E3C5D1 /* PrivateInterface.h */,
+				F97B2582247AF4BE00E3C5D1 /* PrivateInterface.m */,
 				F9448DE0247AF164007C1590 /* Info.plist */,
 			);
 			path = DemoFramework;
@@ -80,7 +112,7 @@
 		F9448DE9247AF164007C1590 /* DemoFrameworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				F9448DEA247AF164007C1590 /* DemoFrameworkTests.m */,
+				F97B2585247AF54F00E3C5D1 /* PublicInterfaceSpec.m */,
 				F9448DEC247AF164007C1590 /* Info.plist */,
 			);
 			path = DemoFrameworkTests;
@@ -94,6 +126,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9448DED247AF164007C1590 /* DemoFramework.h in Headers */,
+				F97B2583247AF4BE00E3C5D1 /* PrivateInterface.h in Headers */,
+				F97B257F247AF47B00E3C5D1 /* PublicInterface.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +228,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F97B2580247AF47B00E3C5D1 /* PublicInterface.m in Sources */,
+				F97B2584247AF4BE00E3C5D1 /* PrivateInterface.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9448DEB247AF164007C1590 /* DemoFrameworkTests.m in Sources */,
+				F97B2586247AF54F00E3C5D1 /* PublicInterfaceSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -322,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -343,6 +379,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DemoFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -366,6 +403,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DemoFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -384,6 +422,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JH7LNE4S5Z;
 				INFOPLIST_FILE = DemoFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -401,6 +440,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JH7LNE4S5Z;
 				INFOPLIST_FILE = DemoFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

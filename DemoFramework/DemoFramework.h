@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "PublicInterface.h"
+
 //! Project version number for DemoFramework.
 FOUNDATION_EXPORT double DemoFrameworkVersionNumber;
 
